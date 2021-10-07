@@ -1,6 +1,5 @@
 //
 //  CenterScaleToFitImageView.swift
-//  Dazo
 //
 //  Created by Danish on 03/10/21.
 //
