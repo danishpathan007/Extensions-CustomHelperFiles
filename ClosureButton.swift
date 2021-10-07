@@ -48,3 +48,36 @@ class ClosureButton: UIButton {
     }
     
 }
+
+
+
+--------------- UITableViewCell
+
+class AudioPlayerTableViewCell: UITableViewCell {
+  
+    @IBOutlet weak var audioPlayButton:ClosureButton!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    func playButtonTapped(action:@escaping ClosureButton.ButtonAction) {
+      self.audioPlayButton.setAction(action: action)
+    }
+}
+
+
+--------------- CellForRowAt
+
+ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+       
+                cell.audioPlayButton.tag = indexPath.row
+               
+                cell.playButtonTapped { (playButton) in
+                    let index = playButton.tag
+                }
+                return cell
+ }
+
+
