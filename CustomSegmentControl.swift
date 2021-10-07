@@ -1,6 +1,5 @@
 //
 //  CustomSegmentControl.swift
-//  Dazo
 //
 //  Created by Danish on 11/09/21.
 //
