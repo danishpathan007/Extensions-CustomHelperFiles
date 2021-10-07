@@ -11,17 +11,8 @@ protocol ClosureButtonTargetViewDelegate:class {
     func closureButtonTargetView() -> UIView!
 }
 
-enum SelectedButton: Int {
-    case assigned = 0
-    case practice = 1
-    case report = 2
-}
-
 
 class ClosureButton: UIButton {
-    var row:Int?
-    var section:Int?
-    var type: SelectedButton?
     
     public typealias ButtonAction = (ClosureButton)->Void
     private var closureCallback:ButtonAction!
